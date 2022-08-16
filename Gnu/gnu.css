@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(220, 219, 219);
+}
+.MainBox{
+    max-width: 1350px;
+    
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: rgb(255, 255, 255);
+    height:1000px ;
+    padding: 0px;
+    border-top: 4px solid rgb(131, 16, 16);
+    box-shadow:  5px 5px 8px 10px #8f8f8f;
+}
+.firstLine{
+    
+    float: left;
+    background-color: aqua;
+}
+button{
+    color: rgb(6, 114, 74);
+}
+a{
+    color: black;
+}
+#join{
+    color: red;
+    align-self: end;
+    float:right;
+}
+img{
+    
+    width: 50px;
+     
+}
+.center{
+    margin-top: 10px;
+       
+}
+h1{
+    color: red;
+}
+.Tie{
+    text-align: center;
+    margin-left: 40px; 
+    float: left;
+ 
+}
+.tt{
+    text-align: center;
+}
