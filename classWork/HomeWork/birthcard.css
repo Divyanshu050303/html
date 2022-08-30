@@ -1,0 +1,47 @@
+.maindiv{
+    height: 800px;
+    width: 700px;
+    background-color: bisque;
+    align-content: center;
+    margin-left: 400px;
+    text-align: center;
+    margin-top: auto;
+
+}
+ 
+h1{
+     padding-top: 30px;
+     margin: auto;
+    line-gap-override: 50px;
+    font-size: 59px;
+}
+h2{
+    margin: auto;
+    line-gap-override: 50px;
+    font-size: 20px;
+}
+h3{
+    padding-top: 20px;
+    margin: auto;
+    line-gap-override: 50px;
+    font-size: 70px;
+    font-family: cursive;
+}
+.time
+{
+     
+    background-color: rgb(80, 193, 156);
+    width: 180px;
+    height: 40px;
+    align-items: center;
+    color: white;
+    /* text-align: center; */
+
+}
+img{
+    align-items: center;
+}
+#time1{
+  height: 100px;
+  padding-left: 0px;
+}
