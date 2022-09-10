@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <div class="main">
+       <img  id="myImage"src="./user.png" style="border-radius: 50%" height="100px" width="100px">
+        <button type="button" onclick="fun(1)">User1</butto>
+        <button type="button" onclick="fun(2)">User2</butto>
+    </div>
+    <script>
+        function fun(imagename){
+            if(imagename==1){
+                 document.getElementById('myImage').src="./phot.jpeg";
+            }
+            else{
+                document.getElementById('myImage').src="./me.jpeg";
+            }
+        }
+    </script>
+    
+</body>
+</html>
