@@ -1,0 +1,40 @@
+div > h2{
+    color: rgb(45, 237, 173);
+    background-color: antiquewhite;
+}
+p  h2{
+
+ color: rgb(45, 237, 173);
+    background-color: antiquewhite;
+}
+div h3 {
+    
+ color: rgb(45, 237, 173);
+ background-color: antiquewhite;
+}
+p h5{
+    color: rgb(45, 237, 173);
+    background-color: antiquewhite;
+}
+i h6{
+    color: rgb(45, 237, 173);
+    background-color: antiquewhite;
+}
+
+p+div {
+    color: rgb(45, 237, 173);
+     background-color: antiquewhite;
+}
+div+p{
+    color: rgb(45, 237, 173);
+    background-color: antiquewhite;
+}
+
+i+h1{
+    color: rgb(45, 237, 173);
+    background-color: antiquewhite;
+}
+h1~h2{
+    color: rgb(45, 237, 173);
+    background-color: antiquewhite;
+}
