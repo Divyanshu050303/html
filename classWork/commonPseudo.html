@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Commmon Pseudo</title>
     <style>
-        p:last-child{
+        p:nth-last-of-type(2){
             color: aqua;
         }
+        /* p:lang(en){
+            color: aqua;
+        } */
+        /* p:nth-last-child(2n){
+            color: aqua;
+        } */
+        /* p:not(#a){
+            color: aqua;
+        } */
     </style>
 </head>
 <body>
@@ -19,7 +28,7 @@
         <li><a href="">Target</a></li>
         <li><a href="">Link</a></li>
     </ul>
-    
+<!--     
         <p>
             Hover: - aaaaaaaaasssssssdfghjklwqwertyuio1234567890
         </p>
@@ -34,15 +43,15 @@
         </p>
         <p>
             Link: - aaaaaaaaasssssssdfghjklwqwertyuio1234567890
-        </p> 
+        </p>  -->
     <div>
-        <p>
+        <p lang="en">
             Hover1: - aaaaaaaaasssssssdfghjklwqwertyuio1234567890
         </p>
-        <p>
+        <p lang="hn">
             Target2: - aaaaaaaaasssssssdfghjklwqwertyuio1234567890
         </p>
-        <p>
+        <p lang="fr">
             Active3: - aaaaaaaaasssssssdfghjklwqwertyuio1234567890
         </p>
         <p>

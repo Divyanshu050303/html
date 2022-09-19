@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab19/9/22</title>
+    <style>
+        /* input:required{
+            background-color: aqua;
+        } */
+        /* input:focus{
+            background-color: aqua;
+        } */
+        input[type='radiobutton']:focus{
+            box-shadow: 0 0 0  3px red;
+        }
+        /* input[type='checkbox']:focus{
+            box-shadow: 0 0 0  3px red;
+        } */
+    </style>
+</head>
+<body>
+    <!-- on the bases of form -->
+    <form action="">
+      Name:<input type="text" required >
+      <br>
+      <br>
+      Email:<input type="email">
+      <br>
+      <br>
+      Passw:<input type="password">
+      <br>
+      <br>
+      speilization:<input type="checkbox">c
+      <input type="checkbox"> Python
+      <input type="checkbox"> C#
+      <input type="checkbox"> java
+      <br>
+      <br>
+      Gender:<input type="radio" name="a">Male
+      <input type="radio" name="a">Female
+      <br>
+      <br>
+      Age:<input type="number" min="18" max="60">
+      <input type="submit">
+    </form>
+    
+</body>
+</html>
