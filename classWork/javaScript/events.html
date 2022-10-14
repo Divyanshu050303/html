@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+<style>
+    #con{
+        width: 240px;
+        height: 240px;
+        background-color: aqua;
+    }
+</style>
+</head>
+<body>
+    <!-- Mouse  -->
+
+    <!-- <div id="con" onmousedown="alert('Mouse Move')">
+
+    </div> -->
+    <!-- <div id="con" onclick="alert('Mouse Move')">
+
+    </div> -->
+    <!-- <div id="con" onmouseleave="alert('Mouse Move')">
+
+    </div> -->
+    <!-- <div id="con" onmouseenter="alert('Mouse Move')">
+
+    </div> -->
+    <!-- <div id="con" onmousemove="alert('Mouse Move')">
+
+    </div> -->
+     <!-- keyboard  -->
+    <div id="con">
+        keyup<input type="text" onkeyup="fun1()"><br>
+        keydown<input type="text" onkeydown="fun2()"><br>
+        keyPressing<input type="text" onkeypress="fun3()">
+
+    </div>
+    <script>
+        function fun1(){
+            console.log("key Up Event");
+        }
+        function fun2(){
+            console.log("key down Event");
+        }
+        function fun3(){
+            console.log("key press Event");
+        }
+    </script>
+</body>
+</html>
