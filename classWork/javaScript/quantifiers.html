@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT QUANTIFIERS</title>
+</head>
+<body>
+    <button onclick="fun()">click me</button>
+    <script>
+        function fun(){
+            var content="aankit anurag anuradha ankita ananyakash";
+            var search=/a?/g           // document.write(typeof search);
+            var out=content.match(search);
+            document.write(out);
+        }
+    </script>
+</body>
+</html>
