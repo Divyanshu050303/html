@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Id</title>
+</head>
+<body>
+    <input type="text" id="time">
+    <button onclick="Check()">Check</button>
+    <script>
+        function Check(){
+                var number=document.getElementById("time").value
+                var email = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+                if(number.match(email))
+                {
+                    document.write("Email is valid")
+                }
+                else{
+                    document.write("Email is not valid")
+                }
+        }
+    </script>
+    
+</body>
+</html>

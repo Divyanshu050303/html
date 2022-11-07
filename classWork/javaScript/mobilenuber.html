@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Number</title>
+</head>
+<body>
+    <input type="text" id="time">
+    <button onclick="Check()">Check</button>
+    <script>
+        function Check(){
+                var number=document.getElementById("time").value
+                var search=/^[56]\d{9,9}$/g;
+                if(number.match(search))
+                {
+                    document.write("Number is valid")
+                }
+                else{
+                    document.write("Number is not valid")
+                }
+        }
+    </script>
+    
+</body>
+</html>

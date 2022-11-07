@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Number</title>
+</head>
+<body>
+    <input type="text" id="time">
+    <button onclick="Check()">Check</button>
+    <script>
+        function Check(){
+                var number=document.getElementById("time").value
+                var m = "aeiouAEIOU"
+                var c=0;
+                var time="";
+                for(let i =0;i<number.length;i++){
+                    if(m.includes(number.charAt(i)+"")){
+                        time+=number.charAt(i);
+                    }
+                    
+                }
+                document.write(time)
+                
+                 
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+//Create a pattern for Debit card Number.?
+function cc_format(value) {
+    var v = value.replace(/\s+/g, '').replace(/[^0-9]/gi, '')
+    var matches = v.match(/\d{4,16}/g);
+    var match = matches && matches[0] || ''
+    var parts = []
+
+    for (i=0, len=match.length; i<len; i+=4) {
+        parts.push(match.substring(i, i+4))
+    }
+
+    if (parts.length) {
+        return parts.join(' ')
+    } else {
+        return value
+    }
+}
+
+
+<input type="text" id="txt_cardNumber" name="txt_cardNumber" onkeypress="return checkDigit(event)">
+
+function checkDigit(event) {
+    var code = (event.which) ? event.which : event.keyCode;
+
+    if ((code < 48 || code > 57) && (code > 31)) {
+        return false;
+    }
+
+    return true;
+}
+
+
+function checkDigit() {
+    var allowedChars = "0123456789";
+    var entryVal = document.getElementById('txt_cardNumber').value();
+    var flag;
+
+    for(var i=0; i<entryVal.length; i++){       
+        flag = false;
+
+        for(var j=0; j<allowedChars.length; j++){
+            if(entryVal.charAt(i) == allowedChars.charAt(j)) {
+                flag = true; 
+            }
+        }
+
+        if(flag == false) { 
+            entryVal = entryVal.replace(entryVal.charAt(i),""); i--; 
+        }
+    }
+
+    return true;
+}
+
+
+<input type="text" id="txt_cardNumber" name="txt_cardNumber" pattern="[0-9.]+">
+<input type="number" id="txt_cardNumber" name="txt_cardNumber">
+
+
+$("#txt_cardNumber").keypress(function (e) {
+    if ((e.which < 48 || e.which > 57) && (e.which !== 8) && (e.which !== 0)) {
+        return false;
+    }
+
+    return true;
+});
+
+
