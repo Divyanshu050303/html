@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throw Statement</title>
+</head>
+<body>
+    <input type="text" id="input1">
+    <button onclick="function1()" type="submit">click me</button>
+    <script>
+        function function1(){
+            var out=document.getElementById("input1").value
+            if(out==="")
+            {
+                throw alert("Plese Enter Something ")
+            }
+            else if(isNaN(out))
+            {
+                throw alert("Number is not available")
+            }
+            else{
+
+                document.write(out)
+            }
+        }
+    </script>
+</body>
+</html>
