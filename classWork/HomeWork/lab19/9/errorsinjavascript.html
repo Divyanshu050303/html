@@ -8,12 +8,54 @@
 </head>
 <body>
     <script>
+
+        // range error
+        // var t=20
+        // try {
+            
+        //     t.toPrecision(0);
+        // } catch (error) {
+        //     console.log(error.name,error.message,"Range out of bound")
+        // }
+        //syntax error 
+        // var t=20
+        // try {
+            
+        //     document.write(error.name,error.message,"Range out of bound)
+            
+        // } catch (error) {
+        //     // console.log(error.name,error.message,"Range out of bound")
+        //     document.write("syntax erroe\r")
+        // }
+        //type error
+        // var t=20
+        // try {
+            
+        //     document.wwrite(error.name,error.message,"Range out of bound")
+            
+        // } catch (error) {
+        //     // console.log(error.name,error.message,"Range out of bound")
+        //     document.write("syntax erroe\r")
+        // }
+        // reference error 
+        // var t=20
+        // try {
+        //     b+=a// in this block of code variable "a" is not define 
+        //     document.wwrite(error.name,error.message,"Range out of bound")
+            
+        // } catch (error) {
+        //     // console.log(error.name,error.message,"Range out of bound")
+        //     document.write("syntax erroe\r")
+        // }
+        //uri error
         var t=20
         try {
+           decodeURI("20") 
+            // document.wwrite(error.name,error.message,"Range out of bound")
             
-            t.toPrecision(0);
         } catch (error) {
-            console.log(error.name,error.message,"Range out of bound")
+            // console.log(error.name,error.message,"Range out of bound")
+            document.write("syntax erroe\r")
         }
     </script>
 </body>
